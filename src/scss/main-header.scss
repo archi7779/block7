@@ -1,0 +1,122 @@
+header{
+  font-family: "TT Lakes Medium";
+  padding-top: 24px;
+}
+
+
+main{
+  padding-left: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-header__title{
+  float: left;
+  font-family: "TT Lakes Bold";
+  letter-spacing: -0.6px;
+}
+.main-header__subtitle{
+  float:right;
+  padding-right: 8px;
+  padding-top: 8px;
+  letter-spacing: -0.2px
+}
+.menu-button{
+  float: right;
+  margin-right: 32px;
+  outline: none;
+
+}
+
+.main-header__button1{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  background-image: url("../img/statusBtn.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.main-header__button2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    background-image: url("../img/zayavkaBtn.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+
+}
+nav::before{
+  content: '';
+  display: block;
+  clear: both;
+}
+.main-header__title{
+  font-size:28px;
+}
+.main-header-nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.main-header-nav ul li{
+
+}
+
+.main-header-nav ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  padding: 8px 20px;
+  color:#7E7E82;
+}
+
+
+
+.main-header-nav ul a:hover,
+.main-header-nav ul a:active
+{
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  }
+
+@media (max-width: 1088px){
+  .main-header--mobileHidden{
+    display: none;
+  }
+
+
+
+}
+//start kinda
+
+@media (max-width: 768px) {
+
+.main-header-nav ul li{
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0;
+
+}
+  .main-header-nav ul{
+    flex-wrap: nowrap;
+    min-height: 50px;
+  }
+
+
+}
+.test{
+  clear: both;
+}
+.main-header-nav{
+  overflow: hidden;
+}

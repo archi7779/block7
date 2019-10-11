@@ -1,0 +1,296 @@
+@media(min-width: 1088px){
+  .mobile-header--desktopeHidden{
+    display: none;
+  }
+}
+
+
+.mobile-header .mobile-header__hamburgerMenu,
+.mobile-header img{
+  float: left;
+}
+
+.mobile-header__button{
+  float: right;
+}
+.mobile-header{
+  background: #fff;
+  padding-bottom: 24px;
+}
+.mobile-header::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+.mobile-header__hamburgerMenu{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  margin-left: 24px;
+  margin-right: 40px;
+
+}
+.mobile-header__logo{
+  padding-left: 20px;
+  border-left: 2px solid #EAEAEA;
+}
+.mobile-header__button{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: #FF3E79;
+
+}
+.mobile-header__button:hover{
+  transform: scale(1.2);
+}
+.mobile-header__button:nth-of-type(5),
+.mobile-header__button:nth-of-type(4)
+{
+  margin-right: 16px;
+}
+
+.mobile-header__button:nth-of-type(3){
+  margin-right: 42px;
+}
+
+
+.mobile-header__button:nth-of-type(1){
+  margin-right: 24px;
+}
+.mobile-header__button:nth-of-type(2){
+  padding-left: 0;
+
+}
+
+
+.mobile-header__button--contact::before{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: #EAEAEA;
+}
+.buttonWrapper{
+  float: right;
+}
+.mobile-header__logo::after{
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 2px;
+  background-color: #EAEAEA;
+  position: relative;
+  margin-left: 45px;
+  transform: rotate(90deg);
+  position: relative;
+  top: 22px;
+  border-radius: 5px;
+
+}
+
+.mobile-header__button--order{
+  background-image: url("../img/menuButtonIcons/lupa.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+
+}
+.mobile-header__button--status{
+  background-image: url("../img/menuButtonIcons/tools.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mobile-header__button--info{
+  background-image: url("../img/menuButtonIcons/man.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mobile-header__button--contact{
+  background-image: url("../img/menuButtonIcons/chat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mobile-header__button--phone{
+  background-image: url("../img/menuButtonIcons/phone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+.hamburgerMenu__span__hamburgerMenu{
+  position: relative;
+}
+
+
+
+
+
+.hamburgerMenu__span{
+  width: 10px;
+  height: 2px;
+  content: '';
+  background: #1B1C21;
+  display: inline;
+  position: relative;
+  display: block;
+  left: 11px;
+  top: 19px;
+  background-color: #fff;
+  border-radius: 1px;
+
+
+
+}
+.hamburgerMenu__span::after{
+  width: 14px;
+  height: 2px;
+  content: '';
+  background: #1B1C21;
+  display: inline;
+  position: relative;
+  display: block;
+  top: 3px;
+  background-color: #fff;
+  border-radius: 1px;
+
+}
+
+
+.hamburgerMenu__span::before{
+  width: 18px;
+  height: 2px;
+  content: '';
+  background: #1B1C21;
+  display: inline;
+  position: relative;
+  display: block;
+  top: -5px;
+  background-color: #fff;
+  border-radius: 1px;
+
+}
+
+//нужно добавить классы для кнопок мобильного меню
+// подпинуть их влегка вниз
+
+.mobile_menu_ShowHide{
+  display: grid;
+  width: 100%;
+  position: fixed;
+  grid-template-columns: 320px auto;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+}
+
+.SideMenuHeader{
+  grid-column: 1/2;
+}
+.MobileMenuBlur{
+  grid-column: 2/3;
+  flex-shrink: 1;
+  background-color: #7E7E82;
+  opacity: 0.1;
+
+
+}
+.SideMenuWrapper--shadow{
+  box-shadow: 39px -8px 44px -18px rgba(0,0,0,0.75);
+
+}
+
+.SideMenuWrapper--navFix{
+  margin-bottom: 200px!important;
+}
+.SideMenuWrapper--headerLabelFix{
+  left: 271px!important;
+  transform: translateX(0) !important;
+}
+.SideMenuHeader__logo--positionFix{
+  left: 72px!important;
+}
+.SideMenu__mobile-button--close{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  color: #EAEAEA;
+  position: absolute;
+  outline: none;
+  border: none;
+  top: 24px;
+  left: 16px;
+}
+.SideMenu__mobile-button--close:hover{
+  transform: scale(1.2);
+}
+.SideMenu_mobile-button-displayFix{
+  display: none;
+}
+
+@media (max-width: 565px) {
+.mobile-header__button--phone,
+.mobile-header__button--contact,
+.mobile-header__button--info{
+  display: none;
+}
+  .sectionAbout{
+    flex-wrap: wrap;
+  }
+  .sectionAbout__logo{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .sectionAbout__text{
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 90px;;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  .sectionAbout-readMore{
+    top: 90px;
+  }
+
+}
+
+
+
+//the button psevdo thing
+
+//.mobile-header__button ::after{
+//  content: '';
+//  display: block;
+//  width: 32px;
+//  height: 2px;
+//  background-color: #FF3E79;
+//  transform: rotate(90deg);
+//  position: absolute;
+//  top: 20px;
+//  left: 50vh;
+//
+//}
+//.mobile-header__hamburgerMenu ::after{
+//  content: '';
+//  display: block;
+//  width: 32px;
+//  height: 2px;
+//  background-color: #FF3E79;
+//  transform: rotate(90deg);
+//  position: absolute;
+//  top: 20px;
+//  left: 50vh;
+//
+//}
+
+

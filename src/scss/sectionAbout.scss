@@ -1,0 +1,46 @@
+.sectionAbout{
+  display: flex;
+  position: relative;
+}
+.sectionAbout__text{
+  display: inline-block;
+  font-family: "TT Lakes Regular";
+  font-size: 14px;
+  width: 45.03%;
+  padding-right: 36px;
+  max-height: 160px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  letter-spacing: 0.2px;
+
+  text-overflow:  ellipsis;
+
+
+}
+.sectionAbout__logo{
+ border-radius: 6px;
+  padding-bottom: 38px;
+  max-width: 531px;
+  width: 48.85%;
+  min-width: 320px;
+  min-height: 230px;
+  max-height: 383px;
+  margin-right: 28px;
+}
+
+.sectionAbout-readMore{
+  position: absolute;
+  top:170px;
+  left:0;
+  background: url("/img/readMore.png") no-repeat left center;
+}
+.sectionAbout-readMore a{
+  text-decoration: none;
+  padding-left: 30px;
+  color: #1B1C21;
+  font-family: "TT Lakes Medium";
+
+}
+.sectionAbout-readMore:hover a{
+text-decoration: underline;
+}

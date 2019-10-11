@@ -1,0 +1,68 @@
+$bgColor: #24292e;
+$text: #fff;
+
+@import "normalize.css";
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Bold.woff') format('woff'),
+  url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Medium.woff') format('woff'),
+  url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Regular.woff') format('woff'),
+  url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.readMore-height-fix{
+  max-height: 100% !important;
+}
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: Comic, sans-serif;
+  background-color: #F8F8F8;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+@import 'main-header';
+@import 'wrapper';
+@import 'aside';
+@import 'sectionAbout';
+@import 'sectionBrends';
+@import 'sectionTechType';
+@import 'phoneUsModal__modal';
+@import 'price';
+@import 'sectionAdress';
+@import 'footer';
+@import 'mobileHeader';
+@import 'slider';
+
+

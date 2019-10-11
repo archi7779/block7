@@ -1,0 +1,179 @@
+
+.price{
+  margin-bottom: 112px;
+}
+.pice__span{
+  color: #7E7E82;
+  font-size: 16px;
+  font-family: "TT Lakes Regular";
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+.priceMenu-table{
+  width: 97%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.priceMenu-item{
+  background-color: #fff;
+  text-align: left!important;
+
+
+
+
+
+}
+
+.priceMenu{
+  width: 100%;
+  display: table;
+}
+
+
+.priceMenu-title--sliderFix{
+  display: none;
+}
+.priceMenu--sliderFix{
+  display:flex;
+  flex-wrap: nowrap;
+}
+.priceMenu-item__name{
+  padding-left: 24px;
+
+
+}
+.priceMenu-item__name--sliderFix{
+  display: block;
+  width: 100%;
+  padding-left: 0;
+}
+.priceMenu-item__price{
+
+}
+.priceMenu-item__price--sliderFix{
+  display: block;
+  width: 100%;
+}
+.priceMenu-item__time{
+}
+.table-row{
+  display: table-row;
+  width: 100%;
+  height: 64px;
+
+}
+.table-row--sliderFix{
+  min-width: 260px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-top: 15px;
+  margin-right: 28px;
+  border-radius: 6px;
+
+}
+.table-cell{
+  display: table-cell;
+
+
+}
+.table-row span{
+
+  vertical-align: middle;
+}
+.priceMenu-item__button {
+  margin-top: 10%;
+
+
+}
+.priceMenu-item__button--sliderFix{
+  margin-right: 16px;
+}
+.table-row--hover:hover{
+  background-color: lightgray;
+}
+.table-cell{
+  font-size: 14px;
+}
+.priceMenu-title span{
+  color: #7E7E82;
+  font-size: 14px;
+  font-family: "TT Lakes Medium";
+  opacity: 0.8;
+}
+.priceMenu-item__button{
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #FF3E79;
+  color:white;
+  background-image: url("../img/whiteArrow.png");
+  background-repeat: no-repeat;
+  background-position: center left 90%;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-family: "TT Lakes Regular";
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  padding-left: 20px;
+}
+.priceMenu-item__button:hover {
+  background-color: #1B1C21;
+  letter-spacing: 0.2px;
+  font-family: "TT Lakes Regular";
+}
+.price__info-span{
+  display: block;
+  max-width: 421px;
+  width: 100%;
+  height: 60px;
+  font-family: "TT Lakes Regular";
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+
+}
+.price__getOffer{
+  padding-right: 15px;
+  background: url("../img/BrendList__button.png") no-repeat 100% 65%;
+  color:#1B1C21;
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  letter-spacing: -0.2 px;
+  text-decoration: none;
+}
+.price__getOffer:hover{
+  text-decoration: underline;
+}
+
+.priceMenu-item__name--sliderFix::before{
+  content:'Ремонтные услуги';
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #7E7E82;
+  padding-bottom: 4px;
+}
+.priceMenu-item__price--sliderFix::before{
+  content:'Цена';
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #7E7E82;
+  padding-bottom: 4px;
+}
+
+.priceMenu-item__time--sliderFix::before{
+  content:'Срок';
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #7E7E82;
+  padding-bottom: 4px;
+}

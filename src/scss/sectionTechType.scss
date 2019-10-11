@@ -1,0 +1,65 @@
+
+.sectionTechTypes h2{
+  font-family: "TT Lakes Regular";
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+.TeshList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.TechTypes{
+  max-height: 160px;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+.TechTypes__slider--position{
+  flex-wrap: nowrap;
+  position: relative;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.TechTypes__item{
+  display: flex;
+  min-width: 240px;
+  min-height: 160px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  margin-bottom: 24px;
+  justify-content: space-between!important;
+}
+.TechTypes__button{
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+.TechTypes__span{
+  margin-left: 16px;
+  margin-top: 16px;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  align-self: flex-start!important;
+}
+
+
+.sectionTechTypes {
+  margin-bottom: 51px;
+}
+
+@media (max-width: 1450px) {
+  .TechTypes__item{
+    min-width: 224px;
+  }
+
+}
+
+

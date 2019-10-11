@@ -1,0 +1,58 @@
+.sectionAdress{
+  margin-bottom: 46px;
+  width:100%;
+  box-sizing: border-box;
+}
+.sectionAdress__span{
+  color: #7E7E82;
+  font-size: 16px;
+  font-family: "TT Lakes Regular";
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  display: block;
+
+}
+.sectionAdress__ourPartners {
+  padding-right: 15px;
+  background: url("../img/BrendList__button.png") no-repeat 100% 65%;
+  float: right;
+  margin-right: 32px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #1B1C21;
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  display: block;
+}
+.sectionAdress__ourPartners:hover{
+  text-decoration: underline;
+}
+.map::before{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+.map{
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.sectionAdress__text{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.sectionAdress__text span{
+  padding-right: 32px;
+  width: 45%;
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-family: "TT Lakes Regular";
+  letter-spacing: 0.2px;
+  color: #1B1C21;
+}
+//<img src="./img/Bitmap%20(1).png" alt="map">

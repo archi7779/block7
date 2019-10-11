@@ -1,0 +1,158 @@
+aside{
+ min-width:320px;
+background-color: #FFFFFF;
+}
+.SideMenuHeader{
+  padding-top: 0;
+  width: 100%;
+  height: 90px;
+}
+.SideMenuHeader__search{
+  position: relative;
+  width: 100%;
+}
+.SideMenuHeader input[type='search']{
+  transform: translateX(-1000%);
+  transition: 0.4s;
+  position: absolute;
+  top:24px;
+  height: 40px;
+  border-radius:20px;
+  border: 1px solid #EAEAEA;
+  outline: none;
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 45px;
+  left: 16px;
+
+}
+.SideMenuHeader__logo{
+  position: absolute;
+  top:24px;
+  left:32px;
+  width: 74px;
+  height: 36px;
+  margin-right: 25px;
+  transition: 0.4s;
+
+}
+.searchLabel{
+  position: absolute;
+  top:24px;
+  left: 131px;
+  display: inline-block;
+  width:  40px;
+  height:  40px;
+  background: url("../img/search.png") no-repeat center center;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  transition: 0.4s;
+}
+
+.SideMenuHeader input[type='search']:focus{
+   transform: translateX(0);
+
+
+
+}
+input[type='search']:focus~img{
+  opacity: 0;
+
+  transform: translateX(-1000%);
+}
+input[type='search']:focus~label{
+  transform: translateX(140px);
+
+}
+.SideMenu__mobile-button--close{
+  transition: 0.4s;
+}
+input[type='search']:focus~.SideMenu__mobile-button--close{
+  transform: rotate(360deg) scale(0);
+  transition: 0.4s;
+
+
+
+}
+
+.SideMenuHeader__nav{
+  margin-bottom: 148px;
+}
+.SideMenuHeader__nav li{
+  list-style-type:none;
+}
+.SideMenuHeader__nav li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 2px 15px;
+  margin: 16px 0;
+  color:#1B1C21;
+  font-size: 16px;
+  font-family: "TT Lakes Medium";
+}
+
+.SideMenuHeader__nav li a:hover,
+.SideMenuHeader__nav li .active{
+ border-left: 2px solid #41F6D7;
+  color:#7E7E82;
+}
+
+.sideMenu__button{
+  display: inline-block;
+}
+.SideMenu__mail{
+  display: block;
+  color: #1B1C21;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  font-family: "TT Lakes Medium";
+  margin-bottom: 12px;
+  margin-top: 16px;
+}
+.SideMenu__phoneNumber{
+  display: block;
+  color:#1B1C21;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  font-family: "TT Lakes Bold";
+  margin-bottom: 40px;
+}
+.SideMenu__langSwicher{
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color:#1B1C21;
+}
+
+.SideMenu__langSwicher.active{
+color: #7E7E82;
+}
+.phoneUsButton {
+  background: url("../img/MenuButtonPhone.png") no-repeat center center;
+}
+.contactUsButton{
+  background:url("../img/MenuButtonContact.png")  no-repeat center center;
+}
+.knowUsBetterButton{
+  background:url("../img/MenuButtonMan.png") no-repeat center center;
+}
+
+.sideMenu__button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  border: none;
+  outline: none;
+  margin-right: 16px;
+}
+
+.sideMenu__button:hover{
+  transform: scale(1.2);
+}
+@media (max-width: 1088px) {
+  aside{
+   display: none;
+  }
+
+}
