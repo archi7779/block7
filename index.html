@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
@@ -7,7 +7,7 @@
     <title>ArturNevlolinBlock#7></title>
   <link rel="stylesheet" href="../package/css/swiper.min.css">
 <link href="style.css" rel="stylesheet"></head>
-<body>
+<body class="body">
 <div class="wrapper">
 <header class="mobile-header mobile-header--desktopeHidden">
   <div class="mobile-header__hamburgerMenu">
@@ -62,8 +62,9 @@
       <button class="phoneUsButton sideMenu__button PhoneIcon_modal_button"></button>
       <button class="contactUsButton sideMenu__button ContactIcons_modal_button"></button>
       <button class="knowUsBetterButton sideMenu__button PhoneIcon_modal_button"></button>
-      <span class="SideMenu__mail">mail@cps.com</span>
-      <span class="SideMenu__phoneNumber">8 800 890 8900</span>
+      <a href="mailto:vlad@htmlbook.ru" class="SideMenu__mail">mail@cps.com</a>
+      <a href="8 800 890 8900" class="SideMenu__phoneNumber">8 800 890 8900</a>
+
       <span class="SideMenu__langSwicher active">RU</span>
       <span class="SideMenu__langSwicher">EN</span>
       <span class="SideMenu__langSwicher">CH</span>
@@ -71,13 +72,13 @@
     </main>
   </div>
 
-  <div class="MobileMenuBlur hidden">Bluuur babe</div>
+  <div class="MobileMenuBlur hidden"></div>
 
 
 </aside>
 <main>
   <header class="main-header">
-    <span class="main-header__title">Услуги и сервисы</span>
+    <h1 class="main-header__title">Услуги и сервисы</h1>
     <button class="main-header__button1 menu-button main-header--mobileHidden"></button>
     <span class="main-header__subtitle main-header--mobileHidden">Статус ремонта</span>
     <button class="main-header__button2 menu-button main-header--mobileHidden"></button>
@@ -101,7 +102,7 @@
 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
 
     </span>
-    <img src="/img/cpsPhotoLogo.png" alt="cpsLogo" class="sectionAbout__logo">
+    <img src="./img/cpsPhotoLogo.png" alt="cpsLogo" class="sectionAbout__logo">
     <div class="sectionAbout-readMore">
       <a href="#">Читать далее</a>
     </div>
@@ -255,7 +256,7 @@
 
 
         <div class="priceMenu-item table-row table-row--hover">
-            <span class="priceMenu-item__name table-cel">Замена программного обеспечения</span>
+            <span class="priceMenu-item__name table-cell">Замена программного обеспечения</span>
             <span class="priceMenu-item__price table-cell">1 000 ₽</span>
             <span class="priceMenu-item__time table-cell">30-120 мин</span>
             <button class="priceMenu-item__button table-cell">ЗАКАЗАТЬ</button>
@@ -305,9 +306,9 @@
 
 </div>
 
-<section class="phoneUsModal hidden phoneUsModal__section">
-<div class="blur PhoneUsModalBlur-btn PhoneUsBtnClose"></div>
-<div class="phoneUsModal__modal">
+
+<div class="blur PhoneUsModalBlur-btn PhoneUsBtnClose phoneUsModal phoneUsModal__section hidden"></div>
+<div class="phoneUsModal__modal phoneUsModal__section firstModalSection hidden">
   <form action="#" class="phoneUsModal__form">
   <span class="phoneUsModal__title">Обратная связь</span>
     <input type="text" placeholder="Имя" name="name" class="formField">
@@ -320,22 +321,20 @@
   </form>
   <button class="phoneUsModal__close-button PhoneUsModalBlur-btn PhoneUsBtnClose">X</button>
 </div>
-</section>
 
 
-<section class="phoneUsModal hidden ContactUsModal_section test">
-  <div class="blur PhoneUsModalBlur-btn PhoneUsModalBlur-btn ContactUsBtnClose"></div>
-  <div class="phoneUsModal__modal">
+
+
+  <div class="blur2 PhoneUsModalBlur-btn ContactUsBtnClose ContactUsModal_section hidden"></div>
+  <div class="phoneUsModal__modal ContactUsModal_section hidden">
     <form action="#" class="phoneUsModal__form">
       <span class="phoneUsModal__title">Заказать звонок</span>
-       <input type="text" placeholder="Телефон" name="phone" class="formField">
+       <input type="phone" placeholder="Телефон" name="phone" class="formField">
       <span class="phoneUsModal__info">Нажимая “отправить”, вы даете согласие на <span style="color:#FF3E79">обработку</span>  <span style="color:#FF3E79">персональных данных</span> и соглашаетесь с нашей <span style="color:#FF3E79">политикой конфиденциальности</span></span>
       <button type="button" class="phoneUsModal__button">Отправить</button>
     </form>
     <button class="phoneUsModal__close-button PhoneUsModalBlur-btn ContactUsBtnClose">X</button>
   </div>
-</section>
-<button class="TESTIO0">OFF IT</button>
 
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -343,49 +342,62 @@
 
   // <!--ContactForm Us Modal Window-->
 
-  document.querySelector('.PhoneIcon_modal_button').onclick = function (e) {
-  document.querySelector('.phoneUsModal__section').classList.add('visible');
-  };
+
+  document.querySelectorAll('.PhoneIcon_modal_button').forEach(function (element) {
+    element.onclick = function (e) {
+      document.querySelectorAll('.phoneUsModal__section').forEach(function (elem) {
+        elem.classList.add('visible');
+        elem.classList.remove('hidden');
+        document.querySelector('.body').classList.add('ModalBodyFix');
+
+      })
+    };
+  })
+  document.querySelectorAll('.PhoneIcon_modal_button_mobile').forEach(function (element) {
+    element.onclick = function (e) {
+      document.querySelectorAll('.phoneUsModal__section').forEach(function (elem) {
+        elem.classList.add('visible');
+        elem.classList.remove('hidden');
+        document.querySelector('.body').classList.add('ModalBodyFix');
+
+      })
+    };
+  })
+
+
   let contactUsModalButtons = document.querySelectorAll('.PhoneUsBtnClose');
 
   for(let i=0;i<contactUsModalButtons.length;i++){
     contactUsModalButtons[i].onclick = function (e) {
-     let phoneUsWindow = document.querySelector('.phoneUsModal__section');
-      if(phoneUsWindow.classList.contains('visible')){
-        phoneUsWindow.classList.remove('visible');
-        phoneUsWindow.classList.add('hidden');
-        }
-        else{
-        phoneUsWindow.classList.remove('hidden');
-        phoneUsWindow.classList.add('visible');
-      }
+      document.querySelector('.firstModalSection').classList.add('hidden');
+      document.querySelector('.firstModalSection').classList.remove('visible');
+
+      document.querySelector('.blur').classList.remove('visible');
+      document.querySelector('.blur').classList.add('hidden');
+      document.querySelector('.body').classList.remove('ModalBodyFix');
+
     }
+
   }
 
-  document.querySelector('.PhoneIcon_modal_button_mobile').onclick = function (e) {
-    document.querySelector('.phoneUsModal__section').classList.add('visible');
-  };
-  let contactUsModalButtons2 = document.querySelectorAll('.PhoneUsBtnClose');
 
-  for(let i=0;i<contactUsModalButtons2.length;i++){
-    contactUsModalButtons2[i].onclick = function (e) {
-      let phoneUsWindow = document.querySelector('.phoneUsModal__section');
-      if(phoneUsWindow.classList.contains('visible')){
-        phoneUsWindow.classList.remove('visible');
-        phoneUsWindow.classList.add('hidden');
-      }
-      else{
-        phoneUsWindow.classList.remove('hidden');
-        phoneUsWindow.classList.add('visible');
-      }
-    }
-  }
+
+
+
+
   <!-- End of ContactUs Modal Window-->
 
   <!--AskForCall Modal Window-->
 
-  document.querySelector('.ContactIcons_modal_button_mobile').onclick = function (e) {
-    document.querySelector('.ContactUsModal_section').classList.add('visible');
+    document.querySelector('.ContactIcons_modal_button_mobile').onclick = function (e) {
+
+    document.querySelectorAll('.ContactUsModal_section').forEach(function(elem) {
+      elem.classList.remove('hidden');
+      elem.classList.add('visible');
+      document.querySelector('.body').classList.add('ModalBodyFix');
+    });
+
+
   };
   let phoneUsModalButtons = document.querySelectorAll('.ContactUsBtnClose');
 
@@ -404,28 +416,35 @@
   }
 
   document.querySelector('.ContactIcons_modal_button').onclick = function (e) {
-    document.querySelector('.ContactUsModal_section').classList.add('visible');
+    document.querySelectorAll('.ContactUsModal_section').forEach(function (elem) {
+      elem.classList.add('visible');
+      elem.classList.add('ModalModalFix');
+    })
   };
   let phoneUsModalButtons2 = document.querySelectorAll('.ContactUsBtnClose');
 
   for(let i=0;i<phoneUsModalButtons2.length;i++){
     phoneUsModalButtons2[i].onclick = function (e) {
-      let contactUsWindow = document.querySelector('.ContactUsModal_section');
-      if(contactUsWindow.classList.contains('visible')){
-        contactUsWindow.classList.remove('visible');
-        contactUsWindow.classList.add('hidden');
-      }
-      else{
-        contactUsWindow.classList.remove('hidden');
-        contactUsWindow.classList.add('visible');
-      }
+      let contactUsWindow = document.querySelectorAll('.ContactUsModal_section');
+       contactUsWindow.forEach(function (element) {
+         element.classList.remove('visible');
+       })
+      contactUsWindow.forEach(function (element) {
+        element.classList.add('hidden');
+        document.querySelector('.body').classList.remove('ModalBodyFix');
+      })
+
+
     }
   }
 
   <!-- End of AskForCall Modal Window-->
   <!--Hamburger menu Window-->
 
+
  document.querySelector('.mobile-header__hamburgerMenu').onclick=function (e) {
+   document.querySelector('.body').classList.add('ModalBodyFix');
+   document.querySelector([type = 'aside']).classList.add('ModalModalFix');
 
    document.querySelector('.MobileMenuBlur').classList.remove('hidden');
    document.querySelector('.SideMenuHeader__nav').classList.add('SideMenuWrapper--navFix');
