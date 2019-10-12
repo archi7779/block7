@@ -602,13 +602,13 @@ input[type='search']:focus ~ .SideMenu__mobile-button--close {
 .SideMenu__langSwicher.active {
   color: #7E7E82; }
 
-.phoneUsButton {
+.button_pink--phoneUsButton {
   background: url(./static/MenuButtonPhone.png) no-repeat center center; }
 
-.contactUsButton {
+.button_pink--contactUsButton {
   background: url(./static/MenuButtonContact.png) no-repeat center center; }
 
-.knowUsBetterButton {
+.button_pink--knowUsBetterButton {
   background: url(./static/MenuButtonMan.png) no-repeat center center; }
 
 .sideMenu__button {
